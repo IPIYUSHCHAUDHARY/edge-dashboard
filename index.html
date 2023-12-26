@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="mainWrapr d-flex flex-column">
+        <header class="mainHeadr ">
+            <nav class="navbar navbar-expand-md navbar-light bg-white py-1" aria-label="main navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand ps-2" href="#">
+                        <img src="assets/images/logo.png" alt="edge logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeadr-nav" aria-controls="mainHeadr-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainHeadr-nav">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto mb-2 mb-sm-0">
+                            <li class="nav-item dropdown moreMenu px-2">
+                                <a class="nav-link dropdown-toggle moreMenu d-inline-flex justify-content-center align-items-center" href="#" id="moreMenu-drpdwn" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/triple-dot-menu.svg" alt="triple dot menu button">
+                                </a>
+                                <ul class="dropdown-menu end-0" aria-labelledby="moreMenu-drpdwn">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/profile-icon.png" alt="profile icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCntnt flex-fill d-flex flex-md-row flex-column overflow-auto">
+            <div class="sideNav overflow-auto">
+                <ul class="sideNavBar d-md-block d-flex p-0 m-0">
+                    <li class="sideNavBar-item ">
+                        <a class="sideNavBar-link active" href="#">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.819" height="24.796" viewBox="0 0 24.819 24.796">
+                                    <g id="Group_11485" data-name="Group 11485" transform="translate(652.331 6972.9)">
+                                      <path id="Path_256" data-name="Path 256" d="M290.024,224.577a4.551,4.551,0,1,0-2.218-8.523l-6.371-6.371h5.279V207.2h-8.274a1.241,1.241,0,0,0-1.241,1.241v8.274h2.482v-5.279l6.371,6.371h0a4.551,4.551,0,0,0,3.972,6.768Zm0-6.62h0a2.068,2.068,0,1,1-1.463.606,2.068,2.068,0,0,1,1.463-.606Z" transform="translate(-922.51 -7173.082)" fill="#fff" />
+                                      <path id="Path_257" data-name="Path 257" d="M209.941,128.77v-6.62a4.551,4.551,0,0,0-4.551-4.551H192.151a4.55,4.55,0,0,0-4.551,4.551V135.39a4.551,4.551,0,0,0,4.551,4.551h6.62v-2.482h-6.62a2.069,2.069,0,0,1-2.069-2.069V122.151a2.069,2.069,0,0,1,2.069-2.069H205.39a2.069,2.069,0,0,1,2.069,2.069v6.62Z" transform="translate(-839.531 -7090.1)" fill="#fff" />
+                                    </g>
+                                  </svg>                                                                    
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Integration</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link " href="file-overview.html">
+                            <span class="sideNavBar-linkIcn dataCatalog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.507" height="25.5" viewBox="0 0 25.507 25.5">
+                                    <g id="Group_11486" data-name="Group 11486" transform="translate(844.181 6911.75)">
+                                      <path id="Path_258" data-name="Path 258" d="M32.257,240.756l23.98-.025V226.147h-6.03l-2.63,2.609H32.257Z" transform="translate(-875.688 -7127.756)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_259" data-name="Path 259" d="M470.828,174.386l.019-2.087h-2.891" transform="translate(-1290.278 -7076.517)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_260" data-name="Path 260" d="M36.169,172.293H32.256v4.956" transform="translate(-875.687 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_261" data-name="Path 261" d="M107.852,43.785l.023-11.478h17.739l-.017,9.261" transform="translate(-947.62 -6943.307)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_262" data-name="Path 262" d="M150.712,86.147h6.783" transform="translate(-988.404 -6994.538)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_263" data-name="Path 263" d="M150.712,129.228H162.19" transform="translate(-988.404 -7035.532)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_264" data-name="Path 264" d="M150.712,172.293H162.19" transform="translate(-988.404 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_265" data-name="Path 265" d="M150.712,215.369h6.783" transform="translate(-988.404 -7117.5)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Catalog</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="data-quality.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="Group_11487" data-name="Group 11487" transform="translate(770.447 7490.484)">
+                                      <path id="Path_266" data-name="Path 266" d="M141.063,67.029l.871.5.025-.05a10.077,10.077,0,0,0-8.116-15.959,10.071,10.071,0,0,0-.025,20.141,9.16,9.16,0,0,0,2.764-.4l.05-.025-.2-1-.075.025a9.2,9.2,0,0,1-2.589.4,9.011,9.011,0,1,1,7.295-3.685Z" transform="translate(-892.265 -7540.161)" fill="#fff"/>
+                                      <path id="Path_267" data-name="Path 267" d="M100.6,13.614a11.882,11.882,0,0,0-8.49-3.535,11.377,11.377,0,0,0-3.212.448l-.05.025.174.921.075-.025a11.423,11.423,0,0,1,3.013-.423A11.066,11.066,0,1,1,81.03,22.054a10.932,10.932,0,0,1,2.042-6.4l.05-.05-.822-.473-.025.05A11.791,11.791,0,0,0,80.084,22.1a12,12,0,1,0,20.515-8.49Z" transform="translate(-850.531 -7500.563)" fill="#fff"/>
+                                      <path id="Path_268" data-name="Path 268" d="M243.774,201.773l-1.295,1.295,3.56,3.56,5.975-5.975-1.295-1.295-4.681,4.681Z" transform="translate(-1005.707 -7681.427)" fill="#fff"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Quality</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="data-issues-enrichment.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.604" height="24" viewBox="0 0 26.604 24">
+                                    <g id="Group_11488" data-name="Group 11488" transform="translate(741.217 7366.001)">
+                                      <path id="Path_269" data-name="Path 269" d="M285.53,150.01a.562.562,0,0,0,.4.188h.017a.564.564,0,0,0,.4-.166l3.344-3.344a.562.562,0,1,0-.8-.8l-2.922,2.919-1.357-1.537h0a.562.562,0,1,0-.843.744Z" transform="translate(-1014.877 -7506.468)" fill="#fff"/>
+                                      <path id="Path_270" data-name="Path 270" d="M91.353,61.285h-.517a3,3,0,1,0,0,1.124h.517A2.248,2.248,0,0,0,93.6,60.161V55h4.027v3.911a3,3,0,1,0,1.124,0V55h4.027v5.165a2.248,2.248,0,0,0,2.248,2.248h.517a3,3,0,1,0,0-1.124h-.517a1.124,1.124,0,0,1-1.124-1.124V54.856a4.777,4.777,0,0,0,1.368-8.724v-.146h0a5.125,5.125,0,0,0-9.006-3.352,3.71,3.71,0,0,0-1.146-.174,3.773,3.773,0,0,0-3.731,3.315,4.777,4.777,0,0,0,1.09,9.171v5.215a1.124,1.124,0,0,1-1.124,1.124Zm-3.465,2.447a1.88,1.88,0,1,1,1.326-.556,1.878,1.878,0,0,1-1.326.556Zm20.6-3.754a1.88,1.88,0,1,1-1.32.55,1.876,1.876,0,0,1,1.32-.55Zm-8.424,1.868a1.88,1.88,0,1,1-.554-1.321,1.877,1.877,0,0,1,.554,1.321ZM89.512,50.208a3.653,3.653,0,0,1,2.577-3.5.562.562,0,0,0,.4-.531,2.645,2.645,0,0,1,2.633-2.6,2.61,2.61,0,0,1,1.1.242.562.562,0,0,0,.688-.18,4,4,0,0,1,7.247,2.346,2.8,2.8,0,0,1-.019.408h0a.562.562,0,0,0,.3.562,3.653,3.653,0,0,1-1.663,6.912H93.176a3.667,3.667,0,0,1-3.664-3.664Z" transform="translate(-826.104 -7406.857)" fill="#fff"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Enrichment</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentArea flex-fill overflow-auto">
+
+                <h2 class="contentArea-title mb-1">Data Integration</h2>
+
+                <div class="container-fluid dataContainr">
+                    <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+                        <div class="col py-4 px-1">
+                            <a class="upldBtn" href="#" data-bs-toggle="modal" data-bs-target="#uploadDataModal">
+                                <span class="upldBtn-icn me-3"></span>
+                                <span class="upldBtn-txt">Upload new data</span>
+                            </a>
+                            <div class="modal fade uploadModal " id="uploadDataModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uploadData" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header main-wrp p-0">
+                                            <h5 class="modal-title pb-3 align-items-start" id="uploadData">Upload new data</h5>
+                                            <button type="button" class="closeBtn" data-bs-dismiss="modal"><span class="closeBtnIcn"></span></button>
+                                        </div>
+                                        <div class="modal-body p-0">
+                                            <p class="tab-title pt-3 pb-2 m-0">Select any of the below</p>
+                                            <div class="tabs-main">
+                                                <ul class="nav " id="tabs-wrap" role="tablist">
+                                                    <li class="nav-item tabs-items" role="presentation">
+                                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#databaseWarehouse" type="button" role="tab" aria-controls="databaseWarehouse" aria-selected="true">Database & warehouse</button>
+                                                    </li>
+                                                    <li class=" nav-item tabs-items" role="presentation">
+                                                        <button class="nav-link " data-bs-toggle="tab" data-bs-target="#fileUpload" type="button" role="tab" aria-controls="fileUpload" aria-selected="false">File upload</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content" id="tabs-wrapContent">
+                                                <div class="tab-pane fade active show" id="databaseWarehouse" role="tabpanel" aria-labelledby="datawarehouse-tab">
+                                                    <div class="database-details-Wrapr pt-4">
+                                                        <div class="container-fluid p-0">
+                                                            <div class="row pt-2 pb-3">
+                                                                <div class="col-6 details-item">
+                                                                    <label for="dataSource" class="form-label">Data source</label>
+                                                                    <input type="text" class="form-control" id="dataSource" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row pb-4 mb-2">
+                                                                <h4 class="detail-Head">Connection Details</h4>
+                                                                <div class="col-6 details-item">
+                                                                    <label for="hostPort" class="form-label">Host Port</label>
+                                                                    <input type="text" class="form-control" id="hostPort" placeholder="">
+                                                                </div>
+                                                                <div class="col-6 details-item">
+                                                                    <label for="dataBaseName" class="form-label">Database Name</label>
+                                                                    <input type="text" class="form-control" id="dataBaseName" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row pb-3 mb-1">
+                                                                <h4 class="detail-Head">Login Details</h4>
+                                                                <div class="col-6 details-item">
+                                                                    <label for="userName" class="form-label">Username</label>
+                                                                    <input type="text" class="form-control" id="userName" placeholder="">
+                                                                </div>
+                                                                <div class="col-6 details-item">
+                                                                    <label for="loginPass" class="form-label">Password</label>
+                                                                    <input type="password" class="form-control" id="loginPass" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="detail-btnWrapr d-flex align-items-center">
+                                                                <a href="#" class="testBtn">Test Connection</a>
+                                                                <a href="#" class="saveBtn ms-auto ">Save</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade " id="fileUpload" role="tabpanel" aria-labelledby="file-upload-tab">
+                                                    <div class="slctFormat pt-4 mt-3 px-0 pb-3 d-flex align-items-center">
+                                                        <p class="format-title m-0">Choose file format</p>
+                                                        <div class="format-btn-wrap px-3 " id="xls">
+                                                            <input type="radio" class="formatInpt" id="xlsFormat" name="format" value="xlsFile" checked>
+                                                            <label class="formatInptLbl" for="xlsFormat"><img src="assets/images/excel-file.png" class="formatIcn" alt="Excel Icon" ></label>
+                                                            <input type="radio" class="formatInpt" id="txtFormat" name="format" value="txtFile">
+                                                            <label class="formatInptLbl" for="txtFormat"><img src="assets/images/txt-file.png" class="formatIcn" alt="Notepad Icon" ></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uploadInpt-wrapr input-group">
+                                                        <input type="file" class="form-control" id="uploadInpt">
+                                                        <div class="uploadInpt-cntnt">
+                                                            <img src="assets/images/upload-icon.svg" alt="Upload file Icon" class="upload-icon">
+                                                            <p class="uploadInpt-cntntTxt m-0 pt-2">Drop your file here<span class="text-black px-1">or</span><label class="input-group-text" for="uploadInpt">Browse</label></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-progress-main pt-2">
+                                                        <div class="progress-wrap position-relative">
+                                                            <div class="cust-progress"></div>
+                                                            <div class="cust-progress-filled"></div>
+                                                        </div>
+                                                        <div class="progress-cnt d-flex justify-content-between pt-2 pb-3">
+                                                            <a href="file-preview.html" class="file-name m-0">Test1.txt</a>
+                                                            <p class="file-percentage m-0">60%</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/excel-file.png" alt="excel file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">OTT data</span>
+                                <span class="dataCard-recordCount">12000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet2</span>
+                                <span class="dataCard-recordCount">2000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet3</span>
+                                <span class="dataCard-recordCount">4000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet3</span>
+                                <span class="dataCard-recordCount">4000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/excel-file.png" alt="excel file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet4</span>
+                                <span class="dataCard-recordCount">800 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet5</span>
+                                <span class="dataCard-recordCount">2000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet6</span>
+                                <span class="dataCard-recordCount">4000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet3</span>
+                                <span class="dataCard-recordCount">4000 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-overview-sql.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet7</span>
+                                <span class="dataCard-recordCount">1200 records</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col py-4 px-1">
+                            <a class="dataCard px-3" href="file-preview.html">
+                                <span class="dataCard-icnWrap d-inline-flex align-items-center h-100 pe-3 border-end">
+                                    <img class="dataCard-icn" src="assets/images/sql-file.png" alt="sql file icon" >
+                                </span>
+                                <span class="dataCard-txt d-inline-flex flex-column ps-3">
+                                    <span class="dataCard-name">Datesheet8</span>
+                                <span class="dataCard-recordCount">1245 records</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

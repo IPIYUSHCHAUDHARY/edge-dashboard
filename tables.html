@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="mainWrapr d-flex flex-column">
+        <header class="mainHeadr ">
+            <nav class="navbar navbar-expand-md navbar-light bg-white py-1" aria-label="main navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand ps-2" href="#">
+                        <img src="assets/images/logo.png" alt="edge logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeadr-nav" aria-controls="mainHeadr-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainHeadr-nav">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto mb-2 mb-sm-0">
+                            <li class="nav-item dropdown moreMenu px-2">
+                                <a class="nav-link dropdown-toggle moreMenu d-inline-flex justify-content-center align-items-center" href="#" id="moreMenu-drpdwn" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/triple-dot-menu.svg" alt="triple dot menu button">
+                                </a>
+                                <ul class="dropdown-menu end-0" aria-labelledby="moreMenu-drpdwn">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/profile-icon.png" alt="profile icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCntnt flex-fill d-flex flex-md-row flex-column overflow-auto">
+            <div class="sideNav overflow-auto">
+                <ul class="sideNavBar d-md-block d-flex p-0 m-0">
+                    <li class="sideNavBar-item ">
+                        <a class="sideNavBar-link" href="#">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.819" height="24.796" viewBox="0 0 24.819 24.796">
+                                    <g id="Group_11485" data-name="Group 11485" transform="translate(652.331 6972.9)">
+                                      <path id="Path_256" data-name="Path 256" d="M290.024,224.577a4.551,4.551,0,1,0-2.218-8.523l-6.371-6.371h5.279V207.2h-8.274a1.241,1.241,0,0,0-1.241,1.241v8.274h2.482v-5.279l6.371,6.371h0a4.551,4.551,0,0,0,3.972,6.768Zm0-6.62h0a2.068,2.068,0,1,1-1.463.606,2.068,2.068,0,0,1,1.463-.606Z" transform="translate(-922.51 -7173.082)" fill="#fff" />
+                                      <path id="Path_257" data-name="Path 257" d="M209.941,128.77v-6.62a4.551,4.551,0,0,0-4.551-4.551H192.151a4.55,4.55,0,0,0-4.551,4.551V135.39a4.551,4.551,0,0,0,4.551,4.551h6.62v-2.482h-6.62a2.069,2.069,0,0,1-2.069-2.069V122.151a2.069,2.069,0,0,1,2.069-2.069H205.39a2.069,2.069,0,0,1,2.069,2.069v6.62Z" transform="translate(-839.531 -7090.1)" fill="#fff" />
+                                    </g>
+                                  </svg>                                                                    
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Integration</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link active " href="#">
+                            <span class="sideNavBar-linkIcn dataCatalog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.507" height="25.5" viewBox="0 0 25.507 25.5">
+                                    <g id="Group_11486" data-name="Group 11486" transform="translate(844.181 6911.75)">
+                                      <path id="Path_258" data-name="Path 258" d="M32.257,240.756l23.98-.025V226.147h-6.03l-2.63,2.609H32.257Z" transform="translate(-875.688 -7127.756)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_259" data-name="Path 259" d="M470.828,174.386l.019-2.087h-2.891" transform="translate(-1290.278 -7076.517)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_260" data-name="Path 260" d="M36.169,172.293H32.256v4.956" transform="translate(-875.687 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_261" data-name="Path 261" d="M107.852,43.785l.023-11.478h17.739l-.017,9.261" transform="translate(-947.62 -6943.307)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_262" data-name="Path 262" d="M150.712,86.147h6.783" transform="translate(-988.404 -6994.538)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_263" data-name="Path 263" d="M150.712,129.228H162.19" transform="translate(-988.404 -7035.532)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_264" data-name="Path 264" d="M150.712,172.293H162.19" transform="translate(-988.404 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_265" data-name="Path 265" d="M150.712,215.369h6.783" transform="translate(-988.404 -7117.5)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Catalog</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="data-quality.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="Group_11487" data-name="Group 11487" transform="translate(770.447 7490.484)">
+                                      <path id="Path_266" data-name="Path 266" d="M141.063,67.029l.871.5.025-.05a10.077,10.077,0,0,0-8.116-15.959,10.071,10.071,0,0,0-.025,20.141,9.16,9.16,0,0,0,2.764-.4l.05-.025-.2-1-.075.025a9.2,9.2,0,0,1-2.589.4,9.011,9.011,0,1,1,7.295-3.685Z" transform="translate(-892.265 -7540.161)" fill="#fff"/>
+                                      <path id="Path_267" data-name="Path 267" d="M100.6,13.614a11.882,11.882,0,0,0-8.49-3.535,11.377,11.377,0,0,0-3.212.448l-.05.025.174.921.075-.025a11.423,11.423,0,0,1,3.013-.423A11.066,11.066,0,1,1,81.03,22.054a10.932,10.932,0,0,1,2.042-6.4l.05-.05-.822-.473-.025.05A11.791,11.791,0,0,0,80.084,22.1a12,12,0,1,0,20.515-8.49Z" transform="translate(-850.531 -7500.563)" fill="#fff"/>
+                                      <path id="Path_268" data-name="Path 268" d="M243.774,201.773l-1.295,1.295,3.56,3.56,5.975-5.975-1.295-1.295-4.681,4.681Z" transform="translate(-1005.707 -7681.427)" fill="#fff"/>
+                                    </g>
+                                  </svg>                             
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Quality</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="#">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.604" height="24" viewBox="0 0 26.604 24">
+                                    <g id="Group_11488" data-name="Group 11488" transform="translate(741.217 7366.001)">
+                                      <path id="Path_269" data-name="Path 269" d="M285.53,150.01a.562.562,0,0,0,.4.188h.017a.564.564,0,0,0,.4-.166l3.344-3.344a.562.562,0,1,0-.8-.8l-2.922,2.919-1.357-1.537h0a.562.562,0,1,0-.843.744Z" transform="translate(-1014.877 -7506.468)" fill="#fff"/>
+                                      <path id="Path_270" data-name="Path 270" d="M91.353,61.285h-.517a3,3,0,1,0,0,1.124h.517A2.248,2.248,0,0,0,93.6,60.161V55h4.027v3.911a3,3,0,1,0,1.124,0V55h4.027v5.165a2.248,2.248,0,0,0,2.248,2.248h.517a3,3,0,1,0,0-1.124h-.517a1.124,1.124,0,0,1-1.124-1.124V54.856a4.777,4.777,0,0,0,1.368-8.724v-.146h0a5.125,5.125,0,0,0-9.006-3.352,3.71,3.71,0,0,0-1.146-.174,3.773,3.773,0,0,0-3.731,3.315,4.777,4.777,0,0,0,1.09,9.171v5.215a1.124,1.124,0,0,1-1.124,1.124Zm-3.465,2.447a1.88,1.88,0,1,1,1.326-.556,1.878,1.878,0,0,1-1.326.556Zm20.6-3.754a1.88,1.88,0,1,1-1.32.55,1.876,1.876,0,0,1,1.32-.55Zm-8.424,1.868a1.88,1.88,0,1,1-.554-1.321,1.877,1.877,0,0,1,.554,1.321ZM89.512,50.208a3.653,3.653,0,0,1,2.577-3.5.562.562,0,0,0,.4-.531,2.645,2.645,0,0,1,2.633-2.6,2.61,2.61,0,0,1,1.1.242.562.562,0,0,0,.688-.18,4,4,0,0,1,7.247,2.346,2.8,2.8,0,0,1-.019.408h0a.562.562,0,0,0,.3.562,3.653,3.653,0,0,1-1.663,6.912H93.176a3.667,3.667,0,0,1-3.664-3.664Z" transform="translate(-826.104 -7406.857)" fill="#fff"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Enrichment</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentArea flex-fill overflow-auto d-flex flex-column">
+                <div class="backBtnWrap pb-3">
+                    <a href="file-overview-sql.html" class=" backBtn d-inline-flex align-items-center"><span class="backArrowIcn d-inline-flex me-2"></span>Back to overview</a>
+                </div>
+                <div class="accrdian-wrap-main mt-3 flex-fill">
+                    <div class="row h-100">
+                        <div class="col-3 h-100">
+                            <div class="accordion bg-white h-100 rounded py-2 px-3 overflow-auto" id="tablesAccordion">
+                                <div class="accordion-item border-0 pt-1">
+                                    <button class="accordion-header accrdn-btn d-inline-flex align-items-center" type="button" id="accrd-tables" data-bs-toggle="collapse" data-bs-target="#accrd-tables-collapse" aria-expanded="true" aria-controls="accrd-tables-collapse">
+                                            <span class="accrdn-icn "><img src="assets/images/folder-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                            Tables
+                                    </button>
+                                    <div id="accrd-tables-collapse" class="accordion-collapse collapse show py-2" aria-labelledby="accrd-tables" data-bs-parent="#tablesAccordion">
+                                        <div class="accordion-body p-1">
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">HumanResources.Employee</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3 active">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Person.Address</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Production.Product</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Production.Location</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Production.ProductModel</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Sales.Store</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex">
+                                                <span class="accordn-link-icn "><img src="assets/images/metro-table-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">Sales.Customer</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0 pt-3">
+                                    <button class="accordion-header accrdn-btn d-inline-flex align-items-center" type="button" id="accrd-procedure" data-bs-toggle="collapse" data-bs-target="#accrd-procedure-collapse" aria-expanded="false" aria-controls="accrd-procedure-collapse">
+                                        <span class="accrdn-icn "><img src="assets/images/folder-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                        Procedures
+                                    </button>
+                                    <div id="accrd-procedure-collapse" class="accordion-collapse collapse py-2" aria-labelledby="accrd-procedure-collapse" data-bs-parent="#tablesAccordion">
+                                        <div class="accordion-body p-1">
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/procedure-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">HumanResources.uspUpdateEmployeeHireInfo</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex pb-3">
+                                                <span class="accordn-link-icn "><img src="assets/images/procedure-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">HumanResources.uspUpdateEmployeeHireInfo</span>
+                                            </a>
+                                            <a href="#" class="accordn-link d-flex">
+                                                <span class="accordn-link-icn "><img src="assets/images/procedure-icon.svg" class="img-fluid" alt="folder icon"></span>
+                                                <span class="accordn-link-txt ">HumanResources.uspUpdateEmployeeHireInfo</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 h-100">
+                            <div class="tableDetail-wrapr bg-white h-100 py-4 px-3 overflow-auto rounded">
+                                <h2 class="tableDetail-title d-flex align-items-center mb-0 px-1 pb-2">
+                                    <span class="tableDetail-title-icn me-3">
+                                        <img src="assets/images/metro-table-icon.svg" class="img-fluid w-100" alt="Metro Table Icon">
+                                    </span> Person.Address
+                                </h2>
+
+                                <div class="cntDetails d-flex flex-wrap pt-1">
+                                    <div class="cntDetailsItem pe-3 ">
+                                        <h4 class="cntDetailsHead pb-1 m-0">Documentation</h4>
+                                        <p class="cntDetailtxt mb-0">AdventureWorks</p>
+                                    </div>
+                                    <div class="cntDetailsItem px-3">
+                                        <h4 class="cntDetailsHead pb-1 m-0">Schema</h4>
+                                        <p class="cntDetailtxt mb-0">Person</p>
+                                    </div>
+                                    <div class="cntDetailsItem px-3">
+                                        <h4 class="cntDetailsHead pb-1 m-0">Name</h4>
+                                        <p class="cntDetailtxt mb-0">Address</p>
+                                    </div>
+                                    <div class="cntDetailsItem px-3">
+                                        <h4 class="cntDetailsHead pb-1 m-0">Module</h4>
+                                        <p class="cntDetailtxt mb-0">People</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="tableDetail-accrdn accordion py-3" id="tableDetail-accrdn">
+                                    <div class="accordion-item py-3 rounded-0">
+                                        <button class="accordion-header accrdn-btn d-inline-flex align-items-center" type="button" id="accrd-column" data-bs-toggle="collapse" data-bs-target="#accrd-column-collapse" aria-expanded="false" aria-controls="accrd-column-collapse">
+                                            <span class="arrow-icn me-3"></span>
+                                            Columns
+                                        </button>
+
+                                        <div id="accrd-column-collapse" class="accordion-collapse collapse" aria-labelledby="accrd-column" data-bs-parent="#tableDetail-accrdn">
+                                            <div class="accordion-body">                                                
+                                                <div class="dataContainr-table overviewTable overflow-auto shadow-sm">
+                                                    <table class="table table-hover table-borderless mb-0">
+                                                        <colgroup>
+                                                            <col style="width: 200px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 90px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 250px;">
+                                                            <col style="width: 250px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 200px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Series Title</th>
+                                                                <th scope="col">Year Released</th>
+                                                                <th scope="col">Content Rating</th>
+                                                                <th scope="col">IMDB Rating</th>
+                                                                <th scope="col">R Rating</th>
+                                                                <th scope="col">Genre</th>
+                                                                <th scope="col">Description</th>
+                                                                <th scope="col">No of Seasons</th>
+                                                                <th scope="col">Streaming Platform</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item py-3 rounded-0">
+                                        <button class="accordion-header accrdn-btn d-inline-flex align-items-center" type="button" id="accrd-uniqKey" data-bs-toggle="collapse" data-bs-target="#accrd-uniqKey-collapse" aria-expanded="false" aria-controls="accrd-uniqKey-collapse">
+                                            <span class="arrow-icn me-3"></span>
+                                            Unique Keys
+                                        </button>
+                                        <div id="accrd-uniqKey-collapse" class="accordion-collapse collapse" aria-labelledby="accrd-uniqKey" data-bs-parent="#tableDetail-accrdn">
+                                            <div class="accordion-body">
+                                                <div class="dataContainr-table overviewTable overflow-auto shadow-sm">
+                                                    <table class="table table-hover table-borderless mb-0">
+                                                        <colgroup>
+                                                            <col style="width: 200px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 90px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 250px;">
+                                                            <col style="width: 250px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 200px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Series Title</th>
+                                                                <th scope="col">Year Released</th>
+                                                                <th scope="col">Content Rating</th>
+                                                                <th scope="col">IMDB Rating</th>
+                                                                <th scope="col">R Rating</th>
+                                                                <th scope="col">Genre</th>
+                                                                <th scope="col">Description</th>
+                                                                <th scope="col">No of Seasons</th>
+                                                                <th scope="col">Streaming Platform</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Breaking Bad</td>
+                                                                <td>2008</td>
+                                                                <td>18+</td>
+                                                                <td>9.5</td>
+                                                                <td>100</td>
+                                                                <td>Crime,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                                        desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                                        with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                                        is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Game of Thrones</td>
+                                                                <td>2011</td>
+                                                                <td>18+</td>
+                                                                <td>9.3</td>
+                                                                <td>99</td>
+                                                                <td>Action & Adventure,Drama</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                                        war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                                        one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                                        8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                                        critics.
+                                                                    </div>
+                                                                </td>
+                                                                <td>8</td>
+                                                                <td>HBO MAX,HBO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Rick and Morty</td>
+                                                                <td>2013</td>
+                                                                <td>18+</td>
+                                                                <td>9.2</td>
+                                                                <td>97</td>
+                                                                <td>Animation,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                                        adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                                        Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                                        Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                                        has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>4</td>
+                                                                <td>Free Services,HBO MAX,Hulu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Stranger Things</td>
+                                                                <td>2016</td>
+                                                                <td>16+</td>
+                                                                <td>8.8</td>
+                                                                <td>96</td>
+                                                                <td>Drama,Fantasy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                                        Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                                        date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>3</td>
+                                                                <td>Netflix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>The Boys</td>
+                                                                <td>2019</td>
+                                                                <td>18+</td>
+                                                                <td>8.7</td>
+                                                                <td>95</td>
+                                                                <td>Action & Adventure,Comedy</td>
+                                                                <td>
+                                                                    <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                                        Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                                        The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                                </td>
+                                                                <td>2</td>
+                                                                <td>Prime Video</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

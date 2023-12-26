@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Dashboard</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="mainWrapr d-flex flex-column">
+        <header class="mainHeadr ">
+            <nav class="navbar navbar-expand-md navbar-light bg-white py-1" aria-label="main navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand ps-2" href="#">
+                        <img src="assets/images/logo.png" alt="edge logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeadr-nav" aria-controls="mainHeadr-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainHeadr-nav">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto mb-2 mb-sm-0">
+                            <li class="nav-item dropdown moreMenu px-2">
+                                <a class="nav-link dropdown-toggle moreMenu d-inline-flex justify-content-center align-items-center" href="#" id="moreMenu-drpdwn" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/triple-dot-menu.svg" alt="triple dot menu button">
+                                </a>
+                                <ul class="dropdown-menu end-0" aria-labelledby="moreMenu-drpdwn">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/profile-icon.png" alt="profile icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCntnt flex-fill d-flex flex-md-row flex-column overflow-auto">
+            <div class="sideNav overflow-auto">
+                <ul class="sideNavBar d-md-block d-flex p-0 m-0">
+                    <li class="sideNavBar-item ">
+                        <a class="sideNavBar-link" href="index.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.819" height="24.796" viewBox="0 0 24.819 24.796">
+                                    <g id="Group_11485" data-name="Group 11485" transform="translate(652.331 6972.9)">
+                                      <path id="Path_256" data-name="Path 256" d="M290.024,224.577a4.551,4.551,0,1,0-2.218-8.523l-6.371-6.371h5.279V207.2h-8.274a1.241,1.241,0,0,0-1.241,1.241v8.274h2.482v-5.279l6.371,6.371h0a4.551,4.551,0,0,0,3.972,6.768Zm0-6.62h0a2.068,2.068,0,1,1-1.463.606,2.068,2.068,0,0,1,1.463-.606Z" transform="translate(-922.51 -7173.082)" fill="#fff" />
+                                      <path id="Path_257" data-name="Path 257" d="M209.941,128.77v-6.62a4.551,4.551,0,0,0-4.551-4.551H192.151a4.55,4.55,0,0,0-4.551,4.551V135.39a4.551,4.551,0,0,0,4.551,4.551h6.62v-2.482h-6.62a2.069,2.069,0,0,1-2.069-2.069V122.151a2.069,2.069,0,0,1,2.069-2.069H205.39a2.069,2.069,0,0,1,2.069,2.069v6.62Z" transform="translate(-839.531 -7090.1)" fill="#fff" />
+                                    </g>
+                                  </svg>                                                                    
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Integration</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link active " href="#">
+                            <span class="sideNavBar-linkIcn dataCatalog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.507" height="25.5" viewBox="0 0 25.507 25.5">
+                                    <g id="Group_11486" data-name="Group 11486" transform="translate(844.181 6911.75)">
+                                      <path id="Path_258" data-name="Path 258" d="M32.257,240.756l23.98-.025V226.147h-6.03l-2.63,2.609H32.257Z" transform="translate(-875.688 -7127.756)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_259" data-name="Path 259" d="M470.828,174.386l.019-2.087h-2.891" transform="translate(-1290.278 -7076.517)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_260" data-name="Path 260" d="M36.169,172.293H32.256v4.956" transform="translate(-875.687 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_261" data-name="Path 261" d="M107.852,43.785l.023-11.478h17.739l-.017,9.261" transform="translate(-947.62 -6943.307)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_262" data-name="Path 262" d="M150.712,86.147h6.783" transform="translate(-988.404 -6994.538)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_263" data-name="Path 263" d="M150.712,129.228H162.19" transform="translate(-988.404 -7035.532)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_264" data-name="Path 264" d="M150.712,172.293H162.19" transform="translate(-988.404 -7076.511)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                      <path id="Path_265" data-name="Path 265" d="M150.712,215.369h6.783" transform="translate(-988.404 -7117.5)" fill="none" stroke="#fff" stroke-width="1.5"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Catalog</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="data-quality.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="Group_11487" data-name="Group 11487" transform="translate(770.447 7490.484)">
+                                      <path id="Path_266" data-name="Path 266" d="M141.063,67.029l.871.5.025-.05a10.077,10.077,0,0,0-8.116-15.959,10.071,10.071,0,0,0-.025,20.141,9.16,9.16,0,0,0,2.764-.4l.05-.025-.2-1-.075.025a9.2,9.2,0,0,1-2.589.4,9.011,9.011,0,1,1,7.295-3.685Z" transform="translate(-892.265 -7540.161)" fill="#fff"/>
+                                      <path id="Path_267" data-name="Path 267" d="M100.6,13.614a11.882,11.882,0,0,0-8.49-3.535,11.377,11.377,0,0,0-3.212.448l-.05.025.174.921.075-.025a11.423,11.423,0,0,1,3.013-.423A11.066,11.066,0,1,1,81.03,22.054a10.932,10.932,0,0,1,2.042-6.4l.05-.05-.822-.473-.025.05A11.791,11.791,0,0,0,80.084,22.1a12,12,0,1,0,20.515-8.49Z" transform="translate(-850.531 -7500.563)" fill="#fff"/>
+                                      <path id="Path_268" data-name="Path 268" d="M243.774,201.773l-1.295,1.295,3.56,3.56,5.975-5.975-1.295-1.295-4.681,4.681Z" transform="translate(-1005.707 -7681.427)" fill="#fff"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Quality</span>
+                        </a>
+                    </li>
+                    <li class="sideNavBar-item">
+                        <a class="sideNavBar-link" href="data-issues-enrichment.html">
+                            <span class="sideNavBar-linkIcn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.604" height="24" viewBox="0 0 26.604 24">
+                                    <g id="Group_11488" data-name="Group 11488" transform="translate(741.217 7366.001)">
+                                      <path id="Path_269" data-name="Path 269" d="M285.53,150.01a.562.562,0,0,0,.4.188h.017a.564.564,0,0,0,.4-.166l3.344-3.344a.562.562,0,1,0-.8-.8l-2.922,2.919-1.357-1.537h0a.562.562,0,1,0-.843.744Z" transform="translate(-1014.877 -7506.468)" fill="#fff"/>
+                                      <path id="Path_270" data-name="Path 270" d="M91.353,61.285h-.517a3,3,0,1,0,0,1.124h.517A2.248,2.248,0,0,0,93.6,60.161V55h4.027v3.911a3,3,0,1,0,1.124,0V55h4.027v5.165a2.248,2.248,0,0,0,2.248,2.248h.517a3,3,0,1,0,0-1.124h-.517a1.124,1.124,0,0,1-1.124-1.124V54.856a4.777,4.777,0,0,0,1.368-8.724v-.146h0a5.125,5.125,0,0,0-9.006-3.352,3.71,3.71,0,0,0-1.146-.174,3.773,3.773,0,0,0-3.731,3.315,4.777,4.777,0,0,0,1.09,9.171v5.215a1.124,1.124,0,0,1-1.124,1.124Zm-3.465,2.447a1.88,1.88,0,1,1,1.326-.556,1.878,1.878,0,0,1-1.326.556Zm20.6-3.754a1.88,1.88,0,1,1-1.32.55,1.876,1.876,0,0,1,1.32-.55Zm-8.424,1.868a1.88,1.88,0,1,1-.554-1.321,1.877,1.877,0,0,1,.554,1.321ZM89.512,50.208a3.653,3.653,0,0,1,2.577-3.5.562.562,0,0,0,.4-.531,2.645,2.645,0,0,1,2.633-2.6,2.61,2.61,0,0,1,1.1.242.562.562,0,0,0,.688-.18,4,4,0,0,1,7.247,2.346,2.8,2.8,0,0,1-.019.408h0a.562.562,0,0,0,.3.562,3.653,3.653,0,0,1-1.663,6.912H93.176a3.667,3.667,0,0,1-3.664-3.664Z" transform="translate(-826.104 -7406.857)" fill="#fff"/>
+                                    </g>
+                                  </svg>                                  
+                            </span>
+                            <span class="sideNavBar-linkTxt pt-2">Data Enrichment</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentArea flex-fill overflow-auto">
+                <h2 class="contentArea-title file-preview d-flex align-items-center mb-1">
+                    <span class="contentArea-title-icnWrap pe-1">
+                        <img class="contentArea-title-icn" src="assets/images/excel-file.png" alt="excel file icon" >
+                    </span> OTT data.xls
+                </h2>
+
+                <div class="container-fluid dataContainr">
+                    <ul class="nav mb-3 fileTabList" id="file-tabList" role="tablist">
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link active me-4" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overviewTab" type="button" role="tab" aria-controls="overviewTab" aria-selected="true">Overview</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  me-4" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profileTab" type="button" role="tab" aria-controls="profileTab" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link me-4" id="attribute-tab" data-bs-toggle="tab" data-bs-target="#attributeTab" type="button" role="tab" aria-controls="attributeTab" aria-selected="false">Attributes</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="file-tabContent">
+                        <div class="tab-pane fade show active " id="overviewTab" role="tabpanel" aria-labelledby="overview-tab">
+                            <div class="tabWrapr rounded">
+                                <div class="tabDetails d-flex flex-wrap">
+                                    <div class="tabItem">
+                                        <h4 class="tabDescHead pb-1">Records</h4>
+                                        <p class="tabDescTxt mb-0">15000</p>
+                                    </div>
+                                    <div class="tabItem">
+                                        <h4 class="tabDescHead pb-1">Attributes</h4>
+                                        <p class="tabDescTxt mb-0">9</p>
+                                    </div>
+                                    <div class="tabItem">
+                                        <h4 class="tabDescHead pb-1">Source</h4>
+                                        <p class="tabDescTxt mb-0">XLS upload</p>
+                                    </div>
+                                    <div class="tabItem">
+                                        <h4 class="tabDescHead pb-1">Last Edited</h4>
+                                        <p class="tabDescTxt mb-0">NA</p>
+                                    </div>
+                                    <div class="tabItem">
+                                        <h4 class="tabDescHead pb-1">Last Updated</h4>
+                                        <p class="tabDescTxt mb-0">26-Mar-2022</p>
+                                    </div>
+                                </div>
+                                <div class="tabDesc">
+                                    <h4 class="tabDescHead">Description</h4>
+                                    <p class="tabDescTxt mb-0">Web series dataset from IMDB and various parameters for each of them</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profileTab" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tabWrapr rounded pb-0">
+                                <div class="tabDetails d-flex flex-wrap align-items-center pb-3">
+                                    <div class="tabItem px-2">
+                                        <h4 class="tabDescHead pb-0 pe-3">Data Attributes <span class="tabDescTxt ps-1">9</span></h4>
+                                    </div>
+                                    <div class="tabItem ps-sm-3 px-0 pt-sm-0 pt-2">
+                                        <div class="input-group dataContainr-srchBar ">
+                                            <input type="search" class="form-control dataContainr-srch" placeholder="" aria-label="Search" aria-describedby="SearchAttr">
+                                            <span class="input-group-icn dataContainr-srchIcn p-3 me-2" id="SearchAttr"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabDesc p-0">
+                                    <div class="dataContainr-table overviewTable overflow-auto">
+                                        <table class="table table-hover table-borderless mb-0">
+                                            <colgroup>
+                                                <col style="width: 200px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: 90px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: 250px;">
+                                                <col style="width: 250px;">
+                                                <col style="width: 100px;">
+                                                <col style="width: 200px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Series Title</th>
+                                                    <th scope="col">Year Released</th>
+                                                    <th scope="col">Content Rating</th>
+                                                    <th scope="col">IMDB Rating</th>
+                                                    <th scope="col">R Rating</th>
+                                                    <th scope="col">Genre</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">No of Seasons</th>
+                                                    <th scope="col">Streaming Platform</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Breaking Bad</td>
+                                                    <td>2008</td>
+                                                    <td>18+</td>
+                                                    <td>9.5</td>
+                                                    <td>100</td>
+                                                    <td>Crime,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting
+                                                            desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.Breaking Bad featuring Bryan Cranston and Aaron Paul has one or more episodes streaming
+                                                            with subscription on Netflix, available for purchase on iTunes, available for purchase on Google Play, and 3 others. It's a crime and drama show with 62 episodes over 5 seasons. Breaking Bad
+                                                            is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.5 (1,391,409 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Game of Thrones</td>
+                                                    <td>2011</td>
+                                                    <td>18+</td>
+                                                    <td>9.3</td>
+                                                    <td>99</td>
+                                                    <td>Action & Adventure,Drama</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the
+                                                            war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.Game of Thrones featuring Emilia Clarke and Lena Headey has
+                                                            one or more episodes streaming with subscription on HBO MAX, streaming on HBO, available for purchase on iTunes, and 5 others. It's an action & adventure and drama show with 74 episodes over
+                                                            8 seasons. Game of Thrones is no longer running and has no plans to air new episodes or seasons. It has a very high IMDb audience rating of 9.3 (1,704,731 votes) and was very well received by
+                                                            critics.
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>HBO MAX,HBO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rick and Morty</td>
+                                                    <td>2013</td>
+                                                    <td>18+</td>
+                                                    <td>9.2</td>
+                                                    <td>97</td>
+                                                    <td>Animation,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish
+                                                            adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.Rick and Morty featuring Justin
+                                                            Roiland and Chris Parnell has one or more episodes streaming with subscription on HBO MAX, streaming with subscription on Hulu, streaming via tv everywhere with Adult Swim (Via Cable/Satellite
+                                                            Provider), and 8 others. It's an action & adventure and animation show with 42 episodes over 4 seasons. Rick and Morty is still airing with no announced date for the next episode or season. It
+                                                            has a very high IMDb audience rating of 9.2 (354,057 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>Free Services,HBO MAX,Hulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stranger Things</td>
+                                                    <td>2016</td>
+                                                    <td>16+</td>
+                                                    <td>8.8</td>
+                                                    <td>96</td>
+                                                    <td>Drama,Fantasy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.Stranger Things featuring Winona Ryder and David
+                                                            Harbour has one or more episodes streaming with subscription on Netflix. It's an action & adventure and drama show with 25 episodes over 3 seasons. Stranger Things is still airing with no announced
+                                                            date for the next episode or season. It has a high IMDb audience rating of 8.8 (766,806 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Boys</td>
+                                                    <td>2019</td>
+                                                    <td>18+</td>
+                                                    <td>8.7</td>
+                                                    <td>95</td>
+                                                    <td>Action & Adventure,Comedy</td>
+                                                    <td>
+                                                        <div class="w-100 overflow-hidden">A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.The Boys featuring Karl Urban and
+                                                            Jack Quaid has one or more episodes streaming with subscription on Prime Video, and available for purchase on VUDU. It's an action & adventure and comedy show with 12 episodes over 2 seasons.
+                                                            The Boys has a new episode airing on September 17th, 2020 (PDT). It has a high IMDb audience rating of 8.7 (170,705 votes) and was very well received by critics.</div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>Prime Video</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="attributeTab" role="tabpanel" aria-labelledby="attribute-tab">
+                            <div class="container-fluid p-0">
+                                <div class="row g-3 attrCardWrapr">
+                                    <div class="col-3">
+                                        <div class="attrCard h-100">
+                                            <h5 class="attrCard-head pb-2 mb-1">Summary</h5>
+                                            <div class="attrCard-item row m-0 pb-2">
+                                                <span class="col-6 p-0 attrCard-txt">Records</span>
+                                                <span class="col-6 pe-0 attrCard-val">15000</span>
+                                            </div>
+                                            <div class="attrCard-item row m-0 pb-2">
+                                                <span class="col-6 p-0 attrCard-txt">Source</span>
+                                                <span class="col-6 pe-0 attrCard-val">XLS upload</span>
+                                            </div>
+                                            <div class="attrCard-item row m-0">
+                                                <span class="col-6 p-0 attrCard-txt w-50">Last Edited</span>
+                                                <span class="col-6 pe-0 attrCard-val w-50">NA</span>
+                                            </div>
+                                            <h5 class="attrCard-head pt-4 pb-2 mb-0">Attributes</h5>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">Series Title</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">Year Released</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt ">Content Rating</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt active">IMDB Rating</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">R Rating</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">Genre</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">Description</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">No of Seasons</span>
+                                            </div>
+                                            <div class="attrCard-item pb-3">
+                                                <span class="attrCard-txt">Streaming Platform</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="attrCard h-100">
+                                            <h5 class="attrCard-head pb-2 mb-1">Attributes Summary</h5>
+                                            <div class="d-flex flex-wrap align-items-center pb-3 border-bottom-dashed">
+                                                <div class="attrCard-item pe-4 border-end">
+                                                    <span class="d-block pe-3 pb-1 attrCard-txt">Records</span>
+                                                    <span class="d-block pe-3 attrCard-val">12,353</span>
+                                                </div>
+                                                <div class="attrCard-item ps-4">
+                                                    <span class="d-block ps-3 pb-1 attrCard-txt">Data Type</span>
+                                                    <span class="d-block ps-3 attrCard-val">Float</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-wrap align-items-center py-3 border-bottom-dashed">
+                                                <div class="attrCard-item pe-4">
+                                                    <span class="d-block pe-3 pb-1 attrCard-txt">Count</span>
+                                                    <span class="d-block pe-3 attrCard-val">&nbsp;</span>
+                                                </div>
+                                                <div class="attrCard-item px-4">
+                                                    <span class="d-block px-3 pb-1 attrCard-txt">Unique</span>
+                                                    <span class="d-block px-3 attrCard-val">&nbsp;</span>
+                                                </div>
+                                                <div class="attrCard-item ps-4">
+                                                    <span class="d-block ps-3 pb-1 attrCard-txt">Non-unique</span>
+                                                    <span class="d-block ps-3 attrCard-val">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="attrCard-item py-3">
+                                                <span class="attrCard-txt">Quantiles</span>
+                                            </div>
+                                            <div class="progressChart">
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">0%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">1</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">10%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">5.5</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="5.5" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">20%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">6.2</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="6.2" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">30%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">6.6</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="6.6" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">40%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">6.9</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 69%" aria-valuenow="6.9" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">50%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">7.2</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="7.2" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">60%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">7.4</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 74%" aria-valuenow="7.4" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">70%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">7.6</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="7.6" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">80%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">7.9</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="7.9" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex pb-2">
+                                                    <span class="attrCard-txt txtPercent text-black">90%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">8.2</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="8.2" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="attrCard-item d-flex">
+                                                    <span class="attrCard-txt txtPercent text-black">100%</span>
+                                                    <span class="attrCard-txt txtVal ms-4 text-end text-black">9.7</span>
+                                                    <span class="attrCard-txt quantile-progress ms-2">
+                                                            <span class="progress">
+                                                                <span class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="9.7" aria-valuemin="0" aria-valuemax="10"></span>
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                                <div class="progressChart-avg">
+                                                    <p class="progressChart-avgTxt m-0">Average
+                                                        <span class="progressChart-avgVal d-block">6.973</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column">
+                                        <div class="attrCard mb-3">
+                                            <h5 class="attrCard-head pb-2 mb-1">Numerical Statistics</h5>
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="col-4 attrCard-item ps-0 pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Minimum</span>
+                                                    <span class="d-block pe-3 attrCard-val">1</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Median</span>
+                                                    <span class="d-block pe-3 attrCard-val">7.2</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Variance</span>
+                                                    <span class="d-block pe-3 attrCard-val">1.322</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Maximum</span>
+                                                    <span class="d-block pe-3 attrCard-val">9.7</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Average</span>
+                                                    <span class="d-block pe-3 attrCard-val">6.973</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item pb-3">
+                                                    <span class="d-block pb-1 attrCard-txt">Standard Deviation</span>
+                                                    <span class="d-block pe-3 attrCard-val">1.15</span>
+                                                </div>
+                                                <div class="col-4 attrCard-item">
+                                                    <span class="d-block pb-1 attrCard-txt">Sum</span>
+                                                    <span class="d-block pe-3 attrCard-val">71,175</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="attrCard flex-fill">
+                                            <h5 class="attrCard-head pb-2 mb-1">Frequency Analysis</h5>
+                                            <div class="attrCard-item ">
+                                                <table class="frqTable table table-borderless mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"><button class="sortBtn pe-3 ascending">Value</button></th>
+                                                            <th scope="col"><button class="sortBtn pe-3 descending">Count</button></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="opacity-25">Null</td>
+                                                            <td class="opacity-25 d-flex align-items-center">
+                                                                <span class="txt-Val">2,146</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.5</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">448</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.4</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">447</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.3</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">444</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.2</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">413</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.6</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">396</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">395</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.1</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">388</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.7</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">367</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7.8</td>
+                                                            <td class="d-flex align-items-center">
+                                                                <span class="txt-Val">365</span>
+                                                                <div class="progress flex-fill ms-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
